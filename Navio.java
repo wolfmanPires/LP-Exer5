@@ -10,6 +10,10 @@ public class Navio {
         comprimento = comp;
     }
 
+    public String getMatricula() {
+        return matricula;
+    }
+
     public String getNome() {
         return nome;
     }
