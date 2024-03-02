@@ -52,5 +52,21 @@ public class Porto {
         return false;
     }
 
-    
+    public int totalCont(){
+        int total=0;
+        for(int i=0;i<portaConts.size();i++){
+            total+=portaConts.get(i).getMaxCont();
+        }
+        return total;
+    }
+
+    public float totalCapacidade(){
+        float total=0;
+        for(int i=0;i<portaConts.size();i++){
+            total+=(portaConts.get(i).getMaxCont())*10;
+        }for(int i=0;i<petrols.size();i++){
+            total+=petrols.get(i).getCapCarga();
+        }
+        return total;
+    }
 }
