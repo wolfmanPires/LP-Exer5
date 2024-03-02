@@ -72,4 +72,24 @@ public class Porto {
         }
         return total;
     }
+
+    public void listaPorto(){
+        System.out.println("Navios normais:");
+        for (int i=0;i<navios.size();i++){
+            System.out.println("Matrícula: "+navios.get(i).getMatricula()+
+                    "; Nome: "+navios.get(i).getNome()+"; Comprimento: "+navios.get(i).getComprimento()+" metros.");
+        }
+        System.out.println("Navios porta contentores:");
+        for (int i=0;i<portaConts.size();i++){
+            System.out.println("Matrícula: "+portaConts.get(i).getMatricula()+
+                    "; Nome: "+portaConts.get(i).getNome()+"; Comprimento: "+portaConts.get(i).getComprimento()+" metros; Contentores: "+
+                    portaConts.get(i).getMaxCont());
+        }
+        System.out.println("Navios petroleiros:");
+        for (int i=0;i<petrols.size();i++){
+            System.out.println("Matrícula: "+petrols.get(i).getMatricula()+
+                    "; Nome: "+petrols.get(i).getNome()+"; Comprimento: "+petrols.get(i).getComprimento()+" metros; Capacidade de Carga: "+
+                    petrols.get(i).getCapCarga());
+        }
+    }
 }
