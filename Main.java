@@ -8,7 +8,7 @@ public class Main {
         Petroleiro pt;
         nav = new Navio("1234","Prim",10);
         pc = new PortaContentores("2345","PortaPrim",21,40);
-        pt = new Petroleiro("6789","PetrolPrim",40,30.1);
+        pt = new Petroleiro("6789","PetrolPrim",40,30);
         porto.addNavio(nav);
         porto.addPortaCont(pc);
         porto.addPetrols(pt);
