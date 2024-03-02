@@ -6,4 +6,12 @@ public class PortaContentores extends Navio{
         super(mat, nm, comp);
         maxCont = mc;
     }
+
+    public int getMaxCont() {
+        return maxCont;
+    }
+
+    public void setMaxCont(int maxCont) {
+        this.maxCont = maxCont;
+    }
 }

@@ -7,4 +7,12 @@ public class Petroleiro extends Navio{
         super(mat,nm,comp);
         capCarga = cc;
     }
+
+    public float getCapCarga() {
+        return capCarga;
+    }
+
+    public void setCapCarga(float capCarga) {
+        this.capCarga = capCarga;
+    }
 }
