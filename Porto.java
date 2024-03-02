@@ -13,22 +13,25 @@ public class Porto {
 
     public void addNavio(Navio nav){
         if (verificarExiste(nav.getMatricula())==true){
-            System.out.println(Aviso! Uma embarcação com essa matrícula já existe no porto!);
+            System.out.println("Aviso! Uma embarcação com essa matrícula já existe no porto!");
         }else{
+            System.out.println("Nova embarcação adicionada ao porto.");
             navios.add(nav);
         }
     }
     public void addPortaCont(PortaContentores nav){
         if (verificarExiste(nav.getMatricula())==true){
-            System.out.println(Aviso! Uma embarcação com essa matrícula já existe no porto!);
+            System.out.println("Aviso! Uma embarcação com essa matrícula já existe no porto!");
         }else{
+            System.out.println("Nova embarcação adicionada ao porto.");
             portaConts.add(nav);
         }
     }
     public void addPetrols(Petroleiro nav){
         if (verificarExiste(nav.getMatricula())==true){
-            System.out.println(Aviso! Uma embarcação com essa matrícula já existe no porto!);
+            System.out.println("Aviso! Uma embarcação com essa matrícula já existe no porto!");
         }else{
+            System.out.println("Nova embarcação adicionada ao porto.");
             petrols.add(nav);
         }
     }
